@@ -7,6 +7,39 @@
 <meta charset="ISO-8859-1">
 <title>Tarinees Details</title>
 <style type="text/css">
+.button {
+  background-color: #3388FF ; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.buttonlogout {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.buttonlogout:hover{
+  background-color: #FF0000;
+  color: white;
+}
 table {
   border:2px solid green;
   width: 100%;
@@ -23,9 +56,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 <body>
 	welcome ${user.username}
 	<br>
-	<form action="logoutController">
-	<button>logout</button>
-	</form>
 	<br>
 	<table>
 
@@ -49,6 +79,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 		</tbody>
 	</table>
 	<br>
-	<button onclick="location.href='traineeController.do?action=addtrainee'" type="button">Add Trainee</button>
+	<button class="button button1" onclick="location.href='traineeController.do?action=addtrainee'" type="button">Add Trainee</button>
+	<form action="logoutController">
+	<button class="button buttonlogout">logout</button>
+	</form>
 </body>
 </html>
