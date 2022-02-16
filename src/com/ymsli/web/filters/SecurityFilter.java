@@ -46,7 +46,7 @@ public class SecurityFilter implements Filter {
 		if(isLoggedIn) {
 		chain.doFilter(request, response);
 		}else {
-			res.sendRedirect("login.jsp?status=please do login");
+			res.sendRedirect("Login.html?status=please do login");
 			return ;
 		}
 	}

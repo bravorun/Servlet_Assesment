@@ -27,7 +27,7 @@
 			</tr>
 			<tr>
 				<td>Enter Percentage:</td>
-				<td><input type="Number" name="percentage" id="percentageId" /></td>
+				<td><input type="Number" step="0.01" name="percentage" id="percentageId" /></td>
 				<td><label id="percentageMsg"></label></td>
 			</tr>
 

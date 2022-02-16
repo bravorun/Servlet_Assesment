@@ -6,28 +6,26 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Tarinees Details</title>
-<style>
+<style type="text/css">
 table {
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
+  border:2px solid green;
+  width: 100%;
 }
 
-td, th {
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
+th, td {
+  text-align: left;
+  padding: 8px;
 }
 
-tr:nth-child(even) {
-	background-color: #dddddd;
-}
+tr:nth-child(even) {background-color: #f2f2f2;}
 </style>
 </head>
 <body>
 	welcome ${user.username}
 	<br>
-	<a href="logoutController">logout</a>
+	<form action="logoutController">
+	<button>logout</button>
+	</form>
 	<br>
 	<table>
 
@@ -51,6 +49,6 @@ tr:nth-child(even) {
 		</tbody>
 	</table>
 	<br>
-	<a href="traineeController.do?action=addtrainee">add new Traineee</a>
+	<button onclick="location.href='traineeController.do?action=addtrainee'" type="button">Add Trainee</button>
 </body>
 </html>
